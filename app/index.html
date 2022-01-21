@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <script src="./js/js-yaml.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script> 
+    <title>Temperature and Energy in Real Time</title>
+</head>
+<body>
+    <h1>Current Temperature and Energy</h1>
+    
+    <section>
+        <h2>Readings in Real Time <span>(Updated every 5 seconds)</span></h2>
+        <div class = "chart temp">
+            <canvas id="tempChart"></canvas>
+        </div>
+        <p id="lastReadingTemp">Info Updated Every 5 Seconds</p>
+        <div class = "chart power">
+            <canvas id="powerChart"></canvas>
+        </div>
+        <p id="lastReadingPower">Info Updated Every 5 Seconds</p>
+        <p id="lastReadingBoth">Info Updated Every 5 Seconds</p>
+    </section>
+    
+    <hr>
+    <section>
+        <h2>Recent Averages <span>(Updated every minute)</span></h2>
+        <div class="chart temp">
+            <canvas id="avgTempChart"></canvas>
+        </div>
+        <p id="avgReadingTemp">Info Updated Every Minute</p>
+        <div class="chart power">
+            <canvas id="avgPwrChart"></canvas>
+        </div>
+        <p id="avgReadingPower">Info Updated Every Minute</p>
+        <p id="avgReadingBoth">Info Updated Every Minute</p>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>

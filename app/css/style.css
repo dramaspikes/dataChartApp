@@ -1,0 +1,42 @@
+body{
+    background-color: #f1e9de;
+    padding: 1%;
+}
+
+h1{
+    text-align: center;
+    text-shadow: #2d362d 1px 1px 1px;
+}
+span{
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+#lastReadingTemp, #lastReadingPower, #avgReadingTemp, #avgReadingPower{
+    text-align: center !important;
+}
+#lastReadingBoth, #avgReadingBoth{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 850px) {
+    .chart{
+        display: inline-block;
+        width: 48%;
+    }
+    .temp{
+        margin-right: 1.5%;
+    }
+    .power{
+        margin-left: 1.5%;
+    }
+    #lastReadingTemp, #lastReadingPower, #avgReadingTemp, #avgReadingPower{
+        display: none;
+    }
+    #lastReadingBoth, #avgReadingBoth{
+        display:block;
+        text-align: center;
+    }
+}
