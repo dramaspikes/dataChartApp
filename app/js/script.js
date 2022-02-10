@@ -26,7 +26,7 @@ const ctx2 = $("#powerChart");
 const ctx3 = $("#avgTempChart");
 const ctx4 = $("#avgPwrChart");
 
-// Reeds yaml data. puts them in an object, and passes it to a function that creates graphics
+// Reeds yaml data, puts them in an object, and passes it to a function that creates graphics
 $.ajax({
     url: "../data.yml",
     success: (result)=> {

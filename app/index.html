@@ -17,6 +17,7 @@
     
     <section>
         <h2>Readings in Real Time <span>(Updated every 5 seconds)</span></h2>
+        <!-- Sets space for temp and power charts, which update every 5 seconds -->
         <div class = "chart temp">
             <canvas id="tempChart"></canvas>
         </div>
@@ -26,11 +27,13 @@
         </div>
         <p id="lastReadingPower">Info Updated Every 5 Seconds</p>
         <p id="lastReadingBoth">Info Updated Every 5 Seconds</p>
+        <!-- These different p elements allow for the responsive design, based on screen size and which charts are shown -->
     </section>
     
     <hr>
     <section>
         <h2>Recent Averages <span>(Updated every minute)</span></h2>
+        <!-- Sets space for average temp and power charts, which update every minute -->   
         <div class="chart temp">
             <canvas id="avgTempChart"></canvas>
         </div>
@@ -40,6 +43,7 @@
         </div>
         <p id="avgReadingPower">Info Updated Every Minute</p>
         <p id="avgReadingBoth">Info Updated Every Minute</p>
+        <!-- These different p elements allow for the responsive design, based on screen size and which charts are shown -->
     </section>
     <script src="./js/script.js"></script>
 </body>

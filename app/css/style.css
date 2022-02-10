@@ -1,3 +1,5 @@
+/* Mobile-first styling */
+
 body{
     background-color: #f1e9de;
     padding: 1%;
@@ -20,7 +22,7 @@ span{
 }
 
 
-
+/* Laptop/tablet view */
 @media screen and (min-width: 850px) {
     .chart{
         display: inline-block;
